@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+* {
+  text-align: center;
+}
+
+body {
+  zoom:180%; /* For Chrome, IE, default 100%*/
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navbar {
+  height: 3rem;
+  max-width: 100%;
+  margin-top: 0.5rem;
+  /* min-height: 8vh; */
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+  background-color: transparent;
+  font-family: 'Inter', sans-serif;
+}
+
+.navbar__link {
+  color: #000000;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.navbar__link:hover {
+  color: #2e3440;
+  text-decoration: none;
+}
+
+.navbar__logo {
+  color: #2e3440;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.navbar__logo__code {
+  color: #000000;
+}
+
+.navbar__logo__gram {
+  font-family: "Dancing Script", cursive;
+  font-weight: 400;
+}
+
+.navbar__dot {
+    color: #EBCB8B;
+    margin: 0 0.7rem;
+    font-size: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.banner__container {
+  margin-top: 3rem;
+  font-family: 'Inter', sans-serif;
+  color: #2D3436;
+}
+
+.banner__container > h1 {
+  font-weight: 800;
+  line-height: 20px;
+}
+
+.banner__container > h2 {
+  font-weight: 800;
+}
+
+.banner__keyword {
+  color: #EBCB8B;
+}
+
+.about__container {
+  margin: 0 auto;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+}
+
+.about__div {
+  width: 35rem;
+  margin: 3rem auto;
+}
+
+.about__div > h3 {
+  font-weight: 700;
+  line-height: 4rem;
+}
+
+.about__div > p {
+  font-size: 13px;
+}
+
+hr.style-two {
+  border: 0;
+  height: 1px;
+  width: 35rem;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.upload__content {
+  margin-top: 5rem;
+}
+
+.upload__content > p {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  line-height: 20px;
+  font-weight: 800;
+  color: rgba(46, 52, 64, 0.75);
+}
+
+.upload__plus {
+  color: rgba(46, 52, 64, 0.75);
+  font-size: 55px;
+}
+
+.box__dragndrop,
+.box__uploading,
+.box__success,
+.box__error {
+display: none;
+}
+
+.box.has-advanced-upload {
+background-color: white;
+outline: 2px dashed black;
+outline-offset: -10px;
+}
+
+.box.has-advanced-upload .box__dragndrop {
+display: inline;
+}
+
+.selected-file-wrapper {
+text-align: center;
+padding: 1rem;
+}
+
+.selected-file {
+color: #000; 
+font-weight: bold;
+}
+
+
+.button {
+  width: 160px;
+  height: 40px;
+  padding: 10px 15px;
+  border: 0px solid #000;
+  border-radius: 14px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s ease;
+  background-color: #BF616A;
+  color: #fff;
+}
+
+.button:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background-color: #2e3440;
+  color: aliceblue;
+}
+
+.button:active {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background-color: #2e3440;
+  color: aliceblue;
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile + label {
+  font-size: 1.665em;
+  font-weight: 700;
+  color: #3B4252;
+  display: inline-block;
+  width: 45rem;
+  height: 23rem;
+  padding: 100px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.inputfile + label {
+	cursor: pointer; /* "hand" cursor */
+}
+
+.result {
+  margin: 2rem 0rem;
+}
+
+/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff;
+}

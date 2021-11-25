@@ -1,0 +1,120 @@
+<html>
+
+<head>
+    <title>Python Flask Upload and display image</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/46101c4af4.js"></script>
+    <link rel="stylesheet" href="../static/styles/index.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+</head>
+
+<body>
+
+    <div>
+
+        <!-- NAVBAR -->
+
+        <nav class="container navbar">
+            <div class="item">
+                <span class="navbar__logo d-flex align-items-center">
+                    <!-- <FaBrain class="me-1"/> -->
+                    <span class="navbar__logo__code">Popolo</span>
+                </span>
+            </div>
+            <div class="item d-flex align-items-center">
+                <a href="#howitworks" class="navbar__link">
+                    How it works
+                </a>
+                <i class="fa fa-circle navbar__dot" aria-hidden="true"></i>
+                <a href="#whoweare" class="navbar__link">
+                    Who we are
+                </a>
+                <i class="fa fa-circle navbar__dot" aria-hidden="true"></i>
+                <a href="#whatwedo" class="navbar__link">
+                    What we do
+                </a>
+                <i class="fa fa-circle navbar__dot" aria-hidden="true"></i>
+                <a href="#" class="navbar__link">
+                    Contact us
+                </a>
+            </div>
+        </nav>
+
+        <!-- BANNER -->
+
+        <div class="banner__container">
+            <h1>Combine <span class="banner__keyword">fine</span> images</h1>
+            <h2>To represent a product</h2>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <p>
+                    {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                {% endif %}
+                {% endwith %}
+                </p>
+                {% if filename %}
+                    <div class="result">
+                        <video width="800" controls src="{{ url_for('display_image', filename=filename) }}"></video>
+                    </div>
+                {% else %}
+                <div class="mb-3">
+                    <div class="">
+                        <form method="post" action="/" enctype="multipart/form-data" class="d-flex flex-column align-items-center">
+                            <input id="file" type="file" name="file" class="inputfile" autocomplete="off" required>
+                            <label for="file" class="upload__plus">Select file ...</label>
+                            <input type="submit" value="Submit" class="button mt-3">
+                        </form>
+                        <div class="se-pre-con"></div>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- ABOUT -->
+
+        <div class="about__container">
+            <hr class="style-two" />
+            <div class="about__div" id="howitworks">
+                <h3>How it works</h3>
+                <p>Over 92% of computers are infected with Adware and spyware. Such software is rarely accompanied by uninstall utility and even when it is it almost always leaves broken Windows Registry keys behind it. Even if you have an anti-spyware tool your Windows Registry might be broken.</p>
+            </div>
+            <hr class="style-two" />
+            <div class="about__div" id="whoweare">
+                <h3>Who we are</h3>
+                <p>Each and every one of us has that moment when we are suddenly stunned when we come face to face with the enormity of the universe.</p>
+            </div>
+            <hr class="style-two" />
+        </div>
+    </div>  
+
+    <script>
+        $(document).ready(function() {
+            $('input[type="file"]').change(function(e) {
+                var geekss = e.target.files[0].name;
+                $("label").text(geekss + ' selected.');
+ 
+            });
+        });
+
+        //paste this code under the head tag or in a separate js file.
+        // Wait for window load
+        $(window).load(function() {
+            // Animate loader off screen
+            $(".se-pre-con").fadeOut("slow");;
+        });
+    </script>
+
+</body>
+
+</html>
