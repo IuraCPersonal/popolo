@@ -1,5 +1,11 @@
 # Computer Vision Camp
 ## Team: Popolo
+Mentor: Stojoc Vladimir
+Andronovici Darinela
+Cebotari Cristi
+Ciuș Iurie
+Malîi Antonela
+Nicula Sandu
 ### Table of contents
 * [Project description](#description)
 * [Implementation](#implementation)
