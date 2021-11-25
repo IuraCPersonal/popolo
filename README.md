@@ -12,7 +12,7 @@ Mentor: Stojoc Vladimir
 Seeing as the children are victims of abuse and is are potential witnesses at criminal proceedings, sharing the videos which show the faces of the children subjects the children to potential harm such as victimisation and/or retribution. For this reason, our team developed an application that will blurry the children's faces in videos. 
 
 ### Implementation
-In order to develop the model for video processing, we combined two neural networks, one for face recognition and the second one, for face classification. As Convolutiona Neural Network for classification, we used the pretrained 18-layered ResNet ```net = resnet18()```, on 5 epochs, that gave us the following results:
+In order to develop the model for video processing, we combined two neural networks, one for face recognition and the second one, for face classification. As Convolutiona Neural Network for classification, we used the pretrained 18-layered ResNet ```net=resnet18()```, on 5 epochs, that gave us the following results:
 
 ![Screenshot 2021-11-25 204151](https://user-images.githubusercontent.com/56044286/143489438-56c68b88-f70f-4bb7-94fc-ea3dca6b719e.png)
 
