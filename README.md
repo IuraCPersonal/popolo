@@ -22,7 +22,7 @@ For face recognition, we used OpenCV – DNN method as it is pretty fast and ver
 
 ### Installation
 
-1. Clone the repo
+1. Clone the repo:
 
 ```sh
 git clone https://github.com/IuraCPersonal/popolo
@@ -34,7 +34,7 @@ git clone https://github.com/IuraCPersonal/popolo
 pip install -r requirements.txt
 ```
 
-3. To run the application, use the flask command or python -m flask:
+3. To run the application, use the `flask` command or `python -m flask`:
 
 ```sh
 flask run
