@@ -9,6 +9,9 @@ Mentor: Stojoc Vladimir
 * [References](#references)
 
 ### Project Description
+
+<img src="demo.png" />
+
 Seeing as the children are victims of abuse and is are potential witnesses at criminal proceedings, sharing the videos which show the faces of the children subjects the children to potential harm such as victimisation and/or retribution. For this reason, our team developed an application that will blurry the children's faces in videos. 
 
 ### Implementation
