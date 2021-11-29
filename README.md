@@ -16,7 +16,7 @@ Seeing as the children are victims of abuse and is are potential witnesses at cr
 In order to develop the model for video processing, we combined two neural networks, one for face recognition and the second one, for face classification. As Convolutiona Neural Network for classification, we used the pretrained 18-layered ResNet ```net=resnet18()```, on 5 epochs, that gave us the following results:
 
 
-[Screenshot]("https://user-images.githubusercontent.com/56044286/143489438-56c68b88-f70f-4bb7-94fc-ea3dca6b719e.png")
+![Screenshot]("https://user-images.githubusercontent.com/56044286/143489438-56c68b88-f70f-4bb7-94fc-ea3dca6b719e.png")
 
 The dataset used to train the classificator was composed of two classes: kids and adults, therefore, the train data consisted of 2855 images each class and test length was 826 per each class.
 
