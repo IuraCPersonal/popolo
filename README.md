@@ -47,6 +47,7 @@ flask run
 ### References
 * https://www.kaggle.com/frabbisw/facial-age
 * https://www.mathworks.com/help/deeplearning/ref/resnet18.html
+* https://towardsdatascience.com/face-detection-models-which-to-use-and-why-d263e82c302c
 * https://www.c-sharpcorner.com/article/detecting-faces-from-image-and-video-using-python/
 * https://pytorch.org/docs/stable/index.html
 * https://zulko.github.io/moviepy/
