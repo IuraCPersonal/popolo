@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Python Flask Upload and display image</title>
+    <title>Popolo</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <!-- CSS only -->
@@ -13,6 +13,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -50,8 +51,8 @@
         <!-- BANNER -->
 
         <div class="banner__container">
-            <h1>Combine <span class="banner__keyword">fine</span> images</h1>
-            <h2>To represent a product</h2>
+            <h1>We Serve The Best</h1>
+            <h2>Interests of <span class="banner__keyword">Children</span></h2>
         </div>
 
         <div class="container">
@@ -72,7 +73,14 @@
                         <form method="post" action="/" enctype="multipart/form-data" class="d-flex flex-column align-items-center">
                             <input id="file" type="file" name="file" class="inputfile" autocomplete="off" required>
                             <label for="file" class="upload__plus">Select file ...</label>
-                            <input type="submit" value="Submit" class="button mt-3">
+                            <!-- <input type="submit" value="Submit" class="button mt-3"> -->
+                            <button 
+                                type="submit" 
+                                class="button mt-3"
+                                onclick="this.classList.toggle('button--loading')"
+                            >
+                                <span class="button__text">Submit</span>
+                            </button>
                         </form>
                         <div class="se-pre-con"></div>
                     </div>
@@ -85,16 +93,20 @@
 
         <div class="about__container">
             <hr class="style-two" />
+            <div class="about__div" id="whatwedo">
+                <h3>What we do</h3>
+                <p>Seeing as the children are victims of abuse and is are potential witnesses at criminal proceedings, sharing the videos which show the faces of the children subjects the children to potential harm such as victimisation and/or retribution. For this reason, our team developed an application that will blurry the children's faces in videos.</p>
+            </div>
+            <hr class="style-two" />
             <div class="about__div" id="howitworks">
                 <h3>How it works</h3>
-                <p>Over 92% of computers are infected with Adware and spyware. Such software is rarely accompanied by uninstall utility and even when it is it almost always leaves broken Windows Registry keys behind it. Even if you have an anti-spyware tool your Windows Registry might be broken.</p>
+                <p>In order to develop the model for video processing, we combined two neural networks, one for face recognition and the second one, for face classification.</p>
             </div>
             <hr class="style-two" />
             <div class="about__div" id="whoweare">
                 <h3>Who we are</h3>
-                <p>Each and every one of us has that moment when we are suddenly stunned when we come face to face with the enormity of the universe.</p>
+                <p>We are the Young Justice - Popolo.</p>
             </div>
-            <hr class="style-two" />
         </div>
     </div>  
 
